@@ -4,19 +4,10 @@ import tama2 from "../../../public/tamagotchi2.png";
 import tama3 from "../../../public/tamagotchi3.png";
 
 export class CharacterForm extends React.Component {
-  state = {
-    radioSelected: "tamagotchi1"
-  };
-
-  handleChange = event => {
-    const value = event.target.value;
-    this.setState({ radioSelected: value });
-  };
-
   render() {
-    console.log("State ", this.state);
+    console.log("The state ", this.props);
     return (
-      <form>
+      <form onSubmit={this.props.handleSubmit}>
         <label htmlFor="tamagotchi1">
           <img src={tama1} />
         </label>
@@ -25,8 +16,8 @@ export class CharacterForm extends React.Component {
           id="tamagotchi1"
           name="tamagotchi"
           value="tamagotchi1"
-          checked={this.state.radioSelected === "tamagotchi1"}
-          onChange={this.handleChange}
+          checked={this.props.radioSelected === "tamagotchi1"}
+          onChange={this.props.handleChange}
         />
 
         <label htmlFor="tamagotchi2">
@@ -37,8 +28,8 @@ export class CharacterForm extends React.Component {
           id="tamagotchi2"
           name="tamagotchi"
           value="tamagotchi2"
-          checked={this.state.radioSelected === "tamagotchi2"}
-          onChange={this.handleChange}
+          checked={this.props.radioSelected === "tamagotchi2"}
+          onChange={this.props.handleChange}
         />
 
         <label htmlFor="tamagotchi3">
@@ -49,8 +40,8 @@ export class CharacterForm extends React.Component {
           id="tamagotchi3"
           name="tamagotchi"
           value="tamagotchi3"
-          checked={this.state.radioSelected === "tamagotchi3"}
-          onChange={this.handleChange}
+          checked={this.props.radioSelected === "tamagotchi3"}
+          onChange={this.props.handleChange}
         />
 
         <button type="submit">Submit</button>
