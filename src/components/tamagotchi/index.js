@@ -1,11 +1,10 @@
 import React from "react";
-import Canvas from "./canvas";
+import HealthBar from "./HealthBar";
+import tama1 from "../../../public/tamagotchi1trans.png";
+import "./style.css";
 
 export class Tamagotchi extends React.Component {
   render() {
-    const tama = this.props.radioSelect;
-    if (tama === tamagotchi1) {
-    }
-    return <Canvas />;
+    return <HealthBar />;
   }
 }
