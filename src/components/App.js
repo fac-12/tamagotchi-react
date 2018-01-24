@@ -18,6 +18,35 @@ export default class App extends React.Component {
   };
 
   render() {
+    return (
+      <div class="box">
+        <div class="egg">
+          <div class="screen">
+            {this.renderInside()}
+            <div class="shadowline__l" />
+            <div class="shadowline__inside__r" />
+            <div class="shadowline__r" />
+            <div class="shadowline__b" />
+            <div class="screen__top" />
+            <div class="screen__bottom" />
+          </div>
+
+          <div class="base-shadow" />
+          <div class="egg__top" />
+          <div class="egg__highlight" />
+
+          <div class="button__container">
+            <div class="button__left" />
+            <div class="button__center" />
+            <div class="button__right" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  renderInside() {
+    console.log("render inside called");
     if (this.state.showForm) {
       return (
         <div>
