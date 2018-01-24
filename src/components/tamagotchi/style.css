@@ -1,0 +1,205 @@
+.box {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.egg {
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  margin-left: 25%;
+  background: #ab3afc;
+  border-radius: 50%/60% 60% 40% 40%;
+  box-shadow: 0px 0px 20px #d5d3d3, 0px 0px 20px #d5d3d3;
+}
+
+.keyring {
+  positon: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ac51f7;
+}
+.keyring__hole {
+  positon: absolute;
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  border-radius: 50%;
+  background: white;
+}
+.base-shadow {
+  background: #ac51f7;
+  position: absolute;
+  border-radius: 50%/60% 60% 40% 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+  height: 90%;
+  filter: blur(15px);
+}
+
+.egg__highlight {
+  background: #cc89ff;
+  position: absolute;
+  border-radius: 50%/60% 60% 40% 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+  height: 90%;
+  filter: blur(20px);
+}
+
+.screen__background {
+  position: absolute;
+  width: 59%;
+  margin-left: 21%;
+  margin-top: 39%;
+  height: 42%;
+  background: #5d2291;
+  border-radius: 4px;
+  filter: blur(6px);
+  z-index: 4;
+}
+
+.shadowline__r {
+  position: absolute;
+  height: 99%;
+  width: 1px;
+  background: #5d2291;
+  z-index: 4;
+  margin-left: 101%;
+  margin-top: 1%;
+  filter: blur(3px);
+}
+
+.shadowline__inside__r {
+  position: absolute;
+  height: 99%;
+  width: 2px;
+  background: #6e6a72;
+  z-index: 4;
+  margin-left: 99.5%;
+  filter: blur(2px);
+}
+
+.shadowline__b {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #5d2291;
+  z-index: 4;
+  margin-top: 85%;
+  filter: blur(3px);
+}
+
+.shadowline__l {
+  position: absolute;
+  height: 99%;
+  width: 2px;
+  background: #5d2291;
+  z-index: 4;
+  margin-left: -1%;
+  filter: blur(3px);
+}
+.screen {
+  position: absolute;
+  width: 55%;
+  margin-left: 22.5%;
+  margin-top: 40%;
+  height: 40%;
+  background: #c5c6c2;
+  border-radius: 4px;
+  box-shadow: inset 5px 5px 5px 0 #333333;
+  z-index: 4;
+}
+
+.screen__top {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: #878986;
+  box-shadow: inset 3px 3px 3px #5e5e5e;
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 5px 5px 5px 0 #333333;
+}
+
+.screen__bottom {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: #878986;
+  border-radius: 0 0 4px 4px;
+  box-shadow: inset 5px 0 5px 0 #333333;
+}
+
+splat {
+  position: absolute;
+  z-index: 2;
+  background: #fc329e;
+  height: 80%;
+  width: 80%;
+  border-radius: 60% 32% 40% 16%;
+  top: 10%;
+  left: 10%;
+}
+
+.button__container {
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  margin-left: 25%;
+  margin-top: 85%;
+  z-index: 5;
+}
+
+.button__left {
+  position: absolute;
+  background: #f23269;
+  height: 33px;
+  width: 33px;
+  margin-top: 20%;
+  border-radius: 50%;
+  box-shadow: inset 4px 0 5px -2px #a50351, 4px 0 5px -2px #a50351;
+}
+
+.button__center {
+  position: absolute;
+  background: #f23269;
+  height: 33px;
+  width: 33px;
+  margin-top: 32%;
+  margin-left: 45%;
+  border-radius: 50%;
+  box-shadow: inset 4px 0 5px -2px #a50351, 4px 0 5px -2px #a50351;
+}
+
+.button__right {
+  position: absolute;
+  background: #f23269;
+  height: 33px;
+  width: 33px;
+  margin-left: 90%;
+  border-radius: 50%;
+  margin-top: 20%;
+  box-shadow: inset 4px 0 5px -2px #a50351, 4px 0 5px -2px #a50351;
+}
+
+.sprite {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  left: 40%;
+  top: 40%;
+  height: auto;
+  z-index: 5;
+}
+
+.character__form {
+  position: absolute;
+  z-index: 6;
+}
