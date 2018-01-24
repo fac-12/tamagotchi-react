@@ -24,13 +24,28 @@ export default class HealthBar extends React.Component {
   }
 
   render() {
+    const healthStyle = {
+      background: "rgb(37, 38, 40)",
+      display: "inline",
+      width: `${this.state.health}%`,
+      height: "15px",
+      position: "absolute",
+      display: "block",
+      background: "#303732"
+    };
     if (this.state.health <= 0) {
-      return <div>GAME OVER!</div>;
+      return (
+        <div>
+          <div class="healthbar__container gameover">GAME OVER!</div>
+          {/* <button>START AGAIN</button> */}
+        </div>
+      );
     } else {
       return (
         <div className="healthbar__container">
-          <div className="health">health: {this.state.health}</div>
-          <button className="feedme" onClick={this.resetHealth.bind(this)}>
+          <div className="health" style={healthStyle} />
+
+          <button onClick={this.resetHealth.bind(this)} class="feedme">
             Feed Me
           </button>
         </div>

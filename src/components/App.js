@@ -30,6 +30,7 @@ export default class App extends React.Component {
             <div className="screen__top" />
             <div className="screen__bottom" />
           </div>
+          <div className="screen_dynamic" />
 
           <div className="base-shadow" />
           <div className="egg__top" />
