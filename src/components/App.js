@@ -19,26 +19,26 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div class="box">
-        <div class="egg">
-          <div class="screen">
+      <div className="box">
+        <div className="egg">
+          <div className="screen">
             {this.renderInside()}
-            <div class="shadowline__l" />
-            <div class="shadowline__inside__r" />
-            <div class="shadowline__r" />
-            <div class="shadowline__b" />
-            <div class="screen__top" />
-            <div class="screen__bottom" />
+            <div className="shadowline__l" />
+            <div className="shadowline__inside__r" />
+            <div className="shadowline__r" />
+            <div className="shadowline__b" />
+            <div className="screen__top" />
+            <div className="screen__bottom" />
           </div>
 
-          <div class="base-shadow" />
-          <div class="egg__top" />
-          <div class="egg__highlight" />
+          <div className="base-shadow" />
+          <div className="egg__top" />
+          <div className="egg__highlight" />
 
-          <div class="button__container">
-            <div class="button__left" />
-            <div class="button__center" />
-            <div class="button__right" />
+          <div className="button__container">
+            <div className="button__left" />
+            <div className="button__center" />
+            <div className="button__right" />
           </div>
         </div>
       </div>
@@ -46,10 +46,9 @@ export default class App extends React.Component {
   }
 
   renderInside() {
-    console.log("render inside called");
     if (this.state.showForm) {
       return (
-        <div>
+        <div className="character__form">
           <CharacterForm
             handleChange={this.handleChange.bind(this)}
             radioSelected={this.state.radioSelected}

@@ -1,7 +1,7 @@
 .box {
   position: relative;
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 800px;
   margin: auto;
   margin-top: 10%;
 }
@@ -53,6 +53,58 @@
   filter: blur(20px);
 }
 
+.screen__background {
+  position: absolute;
+  width: 59%;
+  margin-left: 21%;
+  margin-top: 39%;
+  height: 42%;
+  background: #5d2291;
+  border-radius: 4px;
+  filter: blur(6px);
+  z-index: 4;
+}
+
+.shadowline__r {
+  position: absolute;
+  height: 99%;
+  width: 1px;
+  background: #5d2291;
+  z-index: 4;
+  margin-left: 101%;
+  margin-top: 1%;
+  filter: blur(3px);
+}
+
+.shadowline__inside__r {
+  position: absolute;
+  height: 99%;
+  width: 2px;
+  background: #6e6a72;
+  z-index: 4;
+  margin-left: 99.5%;
+  filter: blur(2px);
+}
+
+.shadowline__b {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #5d2291;
+  z-index: 4;
+  margin-top: 85%;
+  filter: blur(3px);
+}
+
+.shadowline__l {
+  position: absolute;
+  height: 99%;
+  width: 2px;
+  background: #5d2291;
+  z-index: 4;
+  margin-left: -1%;
+  filter: blur(3px);
+}
 .screen {
   position: absolute;
   width: 55%;
@@ -61,8 +113,7 @@
   height: 40%;
   background: #c5c6c2;
   border-radius: 4px;
-  /*   -webkit-box-shadow: inset 3px 2px 3px #787c76; */
-  box-shadow: inset 3px 3px 3px #787c76, 3px 2px 3px #601b9b;
+  box-shadow: inset 5px 5px 5px 0 #333333;
   z-index: 4;
 }
 
@@ -73,6 +124,7 @@
   background: #878986;
   box-shadow: inset 3px 3px 3px #5e5e5e;
   border-radius: 4px 4px 0 0;
+  box-shadow: inset 5px 5px 5px 0 #333333;
 }
 
 .screen__bottom {
@@ -81,8 +133,8 @@
   height: 20%;
   bottom: 0;
   background: #878986;
-  box-shadow: inset 4px 0 5px -2px #5e5e5e;
   border-radius: 0 0 4px 4px;
+  box-shadow: inset 5px 0 5px 0 #333333;
 }
 
 splat {
@@ -96,19 +148,6 @@ splat {
   left: 10%;
 }
 
-/* .egg__top {
-
-  background: #ac51f7;
- position: absolute;
-  width: 62%;
-  margin-left: 19%;
-  margin-top: 35%;
-  height: 50%;
-  filter: blur(10px);
-  z-index: 2;
-
-} */
-
 .button__container {
   position: absolute;
   width: 50%;
@@ -121,8 +160,8 @@ splat {
 .button__left {
   position: absolute;
   background: #f23269;
-  height: 22px;
-  width: 22px;
+  height: 33px;
+  width: 33px;
   margin-top: 20%;
   border-radius: 50%;
   box-shadow: inset 4px 0 5px -2px #a50351, 4px 0 5px -2px #a50351;
@@ -131,8 +170,8 @@ splat {
 .button__center {
   position: absolute;
   background: #f23269;
-  height: 22px;
-  width: 22px;
+  height: 33px;
+  width: 33px;
   margin-top: 32%;
   margin-left: 45%;
   border-radius: 50%;
@@ -142,8 +181,8 @@ splat {
 .button__right {
   position: absolute;
   background: #f23269;
-  height: 22px;
-  width: 22px;
+  height: 33px;
+  width: 33px;
   margin-left: 90%;
   border-radius: 50%;
   margin-top: 20%;
@@ -158,4 +197,9 @@ splat {
   top: 40%;
   height: auto;
   z-index: 5;
+}
+
+.character__form {
+  position: absolute;
+  z-index: 6;
 }
