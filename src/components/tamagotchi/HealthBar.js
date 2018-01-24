@@ -37,16 +37,18 @@ export default class HealthBar extends React.Component {
       return (
         <div>
           <div class="healthbar__container gameover">GAME OVER!</div>
-          {/* <button>START AGAIN</button> */}
         </div>
       );
     } else {
       return (
         <div className="healthbar__container">
           <div className="health" style={healthStyle} />
-
-          <button onClick={this.resetHealth.bind(this)} class="feedme">
-            Feed Me
+          <p className="healthbar__label">HUNGER</p>
+          <button
+            className="healthbar__button"
+            onClick={this.resetHealth.bind(this)}
+          >
+            FEED ME!
           </button>
         </div>
       );

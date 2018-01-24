@@ -222,14 +222,24 @@ splat {
   display: block;
   margin: 15% auto;
   background: #f23269;
-  border: #f23269;
+  border: 1px solid #ac2a4f;
+  box-shadow: 1px 1px 2px #ac2a4f;
   outline: none;
   border-radius: 5px;
+  height: 25px;
+  width: 85px;
+  font-size: 14px;
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 0.5px;
 }
 
 .screen__dynamic {
   position: absolute;
   z-index: 6;
+}
+healthbar__container_out {
+  position: absolute;
+  z-index: 12;
 }
 .healthbar__container {
   position: absolute;
@@ -238,13 +248,24 @@ splat {
   margin: 3%;
   z-index: 12;
 }
-
-.feedme {
+.healthbar__button {
   display: block;
-  margin-top: 75%;
-  border: none;
+  margin: 59% auto;
+  background: #f23269;
+  border: 1px solid #ac2a4f;
+  box-shadow: 1px 1px 2px #ac2a4f;
+  outline: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 85px;
+  font-size: 14px;
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 0.5px;
 }
-
+.healthbar__label {
+  text-align: left;
+  letter-spacing: 0.5px;
+}
 .gameover {
   text-align: center;
   display: block;
