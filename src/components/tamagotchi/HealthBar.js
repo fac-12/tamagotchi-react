@@ -5,24 +5,6 @@ export default class HealthBar extends React.Component {
     health: 100
   };
 
-  countDown() {
-    this.setState(prevState => ({
-      health: prevState.health - 1
-    }));
-  }
-
-  componentDidMount() {
-    this.interval = setInterval(() => this.countDown(), 500);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
-  resetHealth() {
-    this.setState({ health: 100 });
-  }
-
   render() {
     const healthStyle = {
       background: "rgb(252, 50, 158)",
@@ -53,5 +35,23 @@ export default class HealthBar extends React.Component {
         </div>
       );
     }
+  }
+
+  countDown() {
+    this.setState(prevState => ({
+      health: prevState.health - 1
+    }));
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.countDown(), 500);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  resetHealth() {
+    this.setState({ health: 100 });
   }
 }

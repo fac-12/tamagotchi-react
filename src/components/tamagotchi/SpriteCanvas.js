@@ -8,6 +8,14 @@ export default class SpriteCanvas extends React.Component {
     frameIndex: 1
   };
 
+  render() {
+    return (
+      <div>
+        <canvas className="spritecanvas" ref="canvas" />
+      </div>
+    );
+  }
+
   updateFrameIndex() {
     this.setState(prevState => ({
       frameIndex: prevState.frameIndex + 1
@@ -32,20 +40,17 @@ export default class SpriteCanvas extends React.Component {
 
   animateCanvas() {
     let sprites;
-    let numberOfFrames;
+    let numberOfFrames = 3;
 
     switch (this.props.tamagotchi) {
       case "tamagotchi1":
         sprites = spritesheet1;
-        numberOfFrames = 3;
         break;
       case "tamagotchi2":
         sprites = spritesheet2;
-        numberOfFrames = 3;
         break;
       case "tamagotchi3":
         sprites = spritesheet3;
-        numberOfFrames = 3;
         break;
     }
 
@@ -73,13 +78,5 @@ export default class SpriteCanvas extends React.Component {
         img.height
       );
     };
-  }
-
-  render() {
-    return (
-      <div>
-        <canvas className="spritecanvas" ref="canvas" />
-      </div>
-    );
   }
 }
