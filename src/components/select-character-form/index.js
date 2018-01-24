@@ -5,7 +5,6 @@ import tama3 from "../../../public/tamagotchi3.png";
 
 export class CharacterForm extends React.Component {
   render() {
-    console.log("The state ", this.props);
     return (
       <form onSubmit={this.props.handleSubmit}>
         <label htmlFor="tamagotchi1">
