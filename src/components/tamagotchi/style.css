@@ -203,3 +203,8 @@ splat {
   position: absolute;
   z-index: 6;
 }
+
+.healthbar__container {
+  position: absolute;
+  z-index: 6;
+}
