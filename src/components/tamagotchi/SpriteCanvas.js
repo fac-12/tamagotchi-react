@@ -37,15 +37,15 @@ export default class SpriteCanvas extends React.Component {
     switch (this.props.tamagotchi) {
       case "tamagotchi1":
         sprites = spritesheet1;
-        numberOfFrames = 25;
+        numberOfFrames = 3;
         break;
       case "tamagotchi2":
         sprites = spritesheet2;
-        numberOfFrames = 20;
+        numberOfFrames = 3;
         break;
       case "tamagotchi3":
         sprites = spritesheet3;
-        numberOfFrames = 20;
+        numberOfFrames = 3;
         break;
     }
 
