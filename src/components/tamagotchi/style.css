@@ -208,3 +208,14 @@ splat {
   position: absolute;
   z-index: 6;
 }
+
+.spritecanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 45%;
+  margin-top: 30%;
+  z-index: 8;
+  width: 600px;
+  height: auto;
+}
