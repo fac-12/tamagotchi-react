@@ -147,7 +147,7 @@ body {
 splat {
   position: absolute;
   z-index: 2;
-  background: #fc329e;
+  background: rgb(252, 50, 158);
   height: 80%;
   width: 80%;
   border-radius: 60% 32% 40% 16%;
@@ -214,13 +214,17 @@ splat {
 .character__form {
   position: absolute;
   z-index: 6;
-  margin-left: 25%;
-  margin-top: 20%;
+  margin-left: 12.5%;
+  margin-top: 12%;
 }
 
 .character__form button {
   display: block;
   margin: 15% auto;
+  background: #f23269;
+  border: #f23269;
+  outline: none;
+  border-radius: 5px;
 }
 
 .screen__dynamic {
@@ -232,10 +236,9 @@ splat {
   text-align: center;
   width: 95%;
   margin: 3%;
-  z-index: 6;
+  z-index: 12;
 }
 
-<<<<<<< HEAD
 .feedme {
   display: block;
   margin-top: 75%;
@@ -249,16 +252,13 @@ splat {
   font-size: 2rem;
 }
 
-.menu__button {
-=======
 .spritecanvas {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 45%;
+  margin-left: 35%;
   margin-top: 30%;
   z-index: 8;
   width: 600px;
   height: auto;
->>>>>>> master
 }

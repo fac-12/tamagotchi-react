@@ -1,7 +1,7 @@
 import React from "react";
 import HealthBar from "./HealthBar";
 import SpriteCanvas from "./SpriteCanvas";
-import tama1 from "../../../public/tamagotchi1trans.png";
+import tama1 from "../../../public/tamagotchi1.png";
 import "./style.css";
 
 export class Tamagotchi extends React.Component {

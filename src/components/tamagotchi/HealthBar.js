@@ -25,7 +25,7 @@ export default class HealthBar extends React.Component {
 
   render() {
     const healthStyle = {
-      background: "rgb(37, 38, 40)",
+      background: "rgb(252, 50, 158)",
       display: "inline",
       width: `${this.state.health}%`,
       height: "15px",
