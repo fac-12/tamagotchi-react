@@ -235,6 +235,7 @@ splat {
   z-index: 6;
 }
 
+<<<<<<< HEAD
 .feedme {
   display: block;
   margin-top: 75%;
@@ -249,4 +250,15 @@ splat {
 }
 
 .menu__button {
+=======
+.spritecanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 45%;
+  margin-top: 30%;
+  z-index: 8;
+  width: 600px;
+  height: auto;
+>>>>>>> master
 }
