@@ -51,9 +51,9 @@ export default class App extends React.Component {
       return (
         <div className="character__form">
           <CharacterForm
-            handleChange={this.handleChange.bind(this)}
+            handleChange={this.handleChange}
             radioSelected={this.state.radioSelected}
-            handleSubmit={this.handleSubmit.bind(this)}
+            handleSubmit={this.handleSubmit}
           />
         </div>
       );
